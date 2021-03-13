@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D56A2A9-155D-424B-88D6-50EEA8A230BD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Control_Points</RootNamespace>
+    <AssemblyName>Control Points</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Data\AmmoMagazines.sbc" />
+    <None Include="Data\Ammos.sbc" />
+    <None Include="Data\BlueprintClasses.sbc" />
+    <None Include="Data\Blueprints.sbc" />
+    <None Include="Data\Components.sbc" />
+    <None Include="Data\CubeBlocks.sbc" />
+    <None Include="Data\CubeBlocks_Special.sbc" />
+    <None Include="Data\EntityContainers.sbc" />
+    <None Include="Data\PhysicalItems.sbc" />
+    <None Include="Data\Weapons.sbc" />
+    <None Include="modinfo.sbmi" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Scripts\ControllPoint.cs" />
+    <Compile Include="Data\Scripts\MatterFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="metadata.mod" />
+    <Content Include="Textures\ControlPoint.dds" />
+    <Content Include="Textures\FactoryCore.dds" />
+    <Content Include="Textures\mattermarker.dds" />
+    <Content Include="Textures\mattermarker_highlight.dds" />
+    <Content Include="Textures\PointTrader.dds" />
+    <Content Include="Textures\specialTech.dds" />
+    <Content Include="Textures\tech2x.dds" />
+    <Content Include="Textures\tech4x.dds" />
+    <Content Include="Textures\tech8x.dds" />
+    <Content Include="Textures\Torpedo.dds" />
+    <Content Include="Textures\TorpedoTurret.dds" />
+    <Content Include="Textures\UnstableMatter.dds" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Weapons>
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>TorpedoTurret</SubtypeId>
+            </Id>
+            <MissileAmmoData RateOfFire="90" ShootSoundName="WepTurretMissileShot" ShotsInBurst="1"/>
+            <DeviateShotAngle>0</DeviateShotAngle>
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="Torpedo" />
+            </AmmoMagazines>
+            <ReloadTime>15000</ReloadTime>
+        </Weapon>
+    </Weapons>
+</Definitions>
